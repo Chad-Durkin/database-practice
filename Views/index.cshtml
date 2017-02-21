@@ -1,0 +1,18 @@
+@{
+    Layout="/Shared/_Layout.cshtml";
+}
+
+<h1>Your inventory list</h1>
+<form action="/items" method="post">
+  <label for="item">Input your item</label>
+  <input type="text" name="item" id="item">
+  <button type="submit" name="button">Submit</button>
+</form>
+
+<form action="/search" method="post">
+  <label for="search-item">Search item name</label>
+  <input type="text" name="search-item">
+  <button type="submit" name="button">Search</button>
+</form>
+
+<a href="/items">See all items in list</a>

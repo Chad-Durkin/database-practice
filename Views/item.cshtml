@@ -1,0 +1,10 @@
+@{
+    Layout="/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.GetName()</h1>
+
+<h2>This is #@Model.GetId() item in the list</h2>
+//@Model.IndexOf//
+<p><a href="/">Add item</a></p>
+<a href="/items">See all items in list</a>
